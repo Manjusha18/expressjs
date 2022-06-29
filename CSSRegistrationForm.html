@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title> student registration form</title>
+        <style>
+            td{
+                color:rgb(148, 42, 247);
+                
+            }
+            #stu:hover{
+                color:rgb(0, 0, 0);
+                background-color: rgb(6, 159, 168);
+            }
+            #gender:hover{
+                background-color: rgb(80, 255, 135);
+            }
+
+            #reg:hover{
+                background-color: burlywood;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+
+
+        
+        <form>
+            <table cellspacing="25" cellpadding="0" align="center">
+                <tr><th colspan="2" style="color:red" id="stu">Student Registration form
+                </th></tr>
+                <tr>
+                    <td>RegNo</td>
+                    <td><input type="text" name="regno" placeholder="Enter your RegNo"></td>
+                </tr>
+                <tr>
+                    <td id="reg">Name
+                    </td>
+                    <td><input type="text" name="name" placeholder="Enter your Name"></td>
+                </tr>
+                <tr>
+                    <td id="reg">Father Name</td>
+                    <td><input type="text" name="Fname" placeholder="Enter your Father Name"></td>
+                </tr>
+                <tr>
+                    <td id="reg">Gender</td>
+                    <td id="gender"><input type="radio" name="Male" >Male</td>
+                    <td id="gender"><input type="radio" name="Female">Female</td>
+
+                </tr>
+                <tr>
+                    <td id="reg">
+                        Date of Birth
+                    </td>
+                    <td id="stu"><input type="date"  name="birthdaytime"></td>
+                </tr>
+                <tr>
+                    <td id="reg">
+                        Language knowns
+                    </td>
+                    <td id="stu" colspan="2"><input type="checkbox" name="C">C
+                    <input type="checkbox" name="C++">C++
+                    <input type="checkbox" name="Python">Python<br>
+                    <input type="checkbox" name="Java">Java
+                        <input type="checkbox" name="R">R
+                        <input type="checkbox" name="Julio">Julio
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td id="reg">Branch</td>
+                    <td id="stu">
+                        <select  name="cars" size="8">
+                            <option value="CSE">CSE</option>
+                             <option value="IT">IT</option>
+                             <option value="AI&DS">AI&DS</option>
+                             <option value="AI&ML">AI&ML</option>
+                             <option value="ECE">ECE</option>
+                             <option value="EEE">EEE</option>
+                             <option value="ME">ME</option>
+                             <option value="CE">CE</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="reg">Address</td>
+                    <td id="stu" colspan="2"><textarea name="Address" rows="9" cols="30" placeholder="Enter Your Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button id="reg" type="submit" value="submit">Submit</button>
+                    <button id="reg" type="reset" value="reset" >Reset</button></td>
+                    
+                </tr>
+            </table>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,61 @@
+installing the express js ----- npx express-generator --view=ejs
+bin - all the compiled js files are stored in bin
+public folder - static content files will be there in public folder 
+routes folder - url mapping  (roter same as url)
+views - generating the dynamic content to the end user -- dynamic content folder -- templete engine is ejs(embedded java Script)
+app.js - starting point of ur application
+
+nodemon package
+install npm install -g nodemon
+g-global -where node js is installed it will be install there
+
+go to package.js module and modify the node to nodemon
+
+npm install
+what are the packages are there in package.json module extract from all the required packages 
+
+
+to see the output go to browser and type -- http://localhost:3000/
+localhost - the browser place the request to our system   the local host where application is running is 3000
+what port number is there in www file that number give in the browser
+if we want to change the port number is must be four digits and the number will be above 2000
+ipcon
+if error comes 
+-> go to bin -> www file -> modify the port number
+
+if we want ip address -open  127.0.0.1:3000 in browser
+
+all the routers in routes modul
+-> in index.js - all the home page will be there
+-> users.js -> eg : login routers , register routers routers related to the users
+
+in index.js
+-> / -> start page (home page url)
+-> req- reruest from user - receiving
+-> res - response to end user - sending
+after writing code
+nodemod is already attached to this we need not be run simply go to broser localhost:3000 and refresh
+
+my static content are there in the public folder we can check in app.js - app.use(express.static(path.join(__dirname, 'public')));
+
+
+EJS
+// all the ejs are there in app.js
+res.render('name of the file',{})
+1) percentage equal --attach the variable value to any of the html tag    attach the value to a variable by using html tag
+
+2) percentage percentage -- if we want to insert a java script code
+
+3)percentage ifen include -- header - title menu 
+                             body - 
+                             footer - function
+
+integration -- 3 parts are in different files then include
+to include partials of the website
+
+
+MY SQL
+//Npm install mysql --save
+create folder database 
+and then in that database folder create db.js
+in that db file write sql database name

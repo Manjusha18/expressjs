@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> student registration form</title>
+    </head>
+    <body>
+        <form action="/loginsubmit" method="post">
+            <table cellspacing="25" cellpadding="0" align="center">
+                <tr><td colspan="2" style="color:red">Student Registration form
+                </td></tr>
+                <tr>
+                    <td>RegNo</td>
+                    <td><input type="text" name="regno" placeholder="Enter your RegNo"></td>
+                </tr>
+                <tr>
+                    <td>Name
+                    </td>
+                    <td><input type="text" name="name" placeholder="Enter your Name"></td>
+                </tr>
+                <tr>
+                    <td>Father Name</td>
+                    <td><input type="text" name="Fname" placeholder="Enter your Father Name"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="Male" >Male</td>
+                    <td><input type="radio" name="Female">Female</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth
+                    </td>
+                    <td><input type="date"  name="birthdaytime"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Language knowns
+                    </td>
+                    <td colspan="2"><input type="checkbox" name="C">C
+                    <input type="checkbox" name="C++">C++
+                    <input type="checkbox" name="Python">Python<br>
+                    <input type="checkbox" name="Java">Java
+                        <input type="checkbox" name="R">R
+                        <input type="checkbox" name="Julio">Julio
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>
+                        <select  name="cars" size="8">
+                            <option value="CSE">CSE</option>
+                             <option value="IT">IT</option>
+                             <option value="AI&DS">AI&DS</option>
+                             <option value="AI&ML">AI&ML</option>
+                             <option value="ECE">ECE</option>
+                             <option value="EEE">EEE</option>
+                             <option value="ME">ME</option>
+                             <option value="CE">CE</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td colspan="2"><textarea name="Address" rows="9" cols="30" placeholder="Enter Your Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button type="submit" value="submit">Submit</button>
+                    <button type="reset" value="reset" >Reset</button></td>
+                    
+                </tr>
+            </table>
+        </form>
+        
+    </body>
+</html>
